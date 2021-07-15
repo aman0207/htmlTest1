@@ -1,0 +1,14 @@
+@import url('global.css');
+  
+.conatiner {
+    display: flex;
+    border: darkorange 1px dotted;
+    justify-content: center;
+}
+
+.content {
+    display: block;
+    width: 75%;
+    border: fuchsia 1px solid;
+    padding: 7px;
+}

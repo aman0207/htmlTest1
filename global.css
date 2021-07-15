@@ -1,0 +1,25 @@
+:root {
+    --bgcolor : #ffffff;
+    --textcolor : #000000;
+    --containerbgcolor : #ffffff;
+  }
+
+body {
+      background-color: var(--bgcolor);
+      color: var(--textcolor);
+      margin: 0;
+      padding: 0;
+    }
+  
+nav {
+    display: block;
+  }
+
+  .content-img {
+    width: 100%;
+  }
+
+  .content-img img {
+    max-width : 100%;
+     max-height : 100%;
+  }
