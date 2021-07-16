@@ -1,28 +1,46 @@
-@import url('global.css');
-  
-.container {
-    display: grid;
-    border: darkorange 1px dotted;
-    justify-content: center;
-    grid-template-columns: auto auto auto;
+@import url("global.css");
+
+body {
+  min-width: 480px;
 }
 
-.content {
-    display: block;
-    border: fuchsia 1px solid;
-    padding: 7px;
-    min-width: 100px;
-    min-height: 100px;
-    font-size: 100px;
+.main {
+  padding: 4ch;
+  height: 40vh;
 }
 
-.content:hover {
-    cursor: pointer;
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.grid {
+  display: grid;
+  gap: 1vh;
+  grid-template-columns: repeat(3, minmax(10vh, auto));
+  grid-template-rows: repeat(3, minmax(10vh, auto));
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: fuchsia 1px solid;
+  font-size: xx-large;
+}
+
+.tile:nth-child(odd) {
+  border: black 1px solid;
+}
+
+.tile:hover {
+  cursor: pointer;
 }
 
 .reset {
-    display: block;
-    background-color: aqua;
-    width: max-content;
-    cursor: pointer;
+  display: block;
+  background-color: aqua;
+  width: max-content;
+  cursor: pointer;
 }
