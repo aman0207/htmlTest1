@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Breacker</title>
+    <link rel="stylesheet" href="blockbreaker.css" />
+    <script src="blockbreaker.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="ticktakto.htm">TicTacToe</a></li>
+            <li><a href="blockbreaker.htm">Block Breaker</a></li>
+            <li><button onclick="switchTheme()">Theme</button></li>
+        </ul>
+    </nav>
+    <div class="parent-container">
+        <!-- <div class="container" onmousemove="showCoords(event)"> -->
+        <div class="container"></div>
+        Help
+        <!-- <div id="boxParentId" class="boxParent" onmousemove="movex(event)"> -->
+        <div id="boxParentId" class="boxParent">
+            <div class="box" id="tryMoveDiv"></div>
+            <div class="base" id="tryMoveDiv2" onclick="moveDiv()"></div>
+        </div>
+    </div>
+    <div id="coordinateText" style="top : 127%; position: absolute; left : 5%">Coords</div>
+
+    </div>
+
+</body>
+
+</html>

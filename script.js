@@ -116,3 +116,5 @@ function resetGame() {
         document.getElementById('box'+i).innerText = " ";
     }
 }
+
+
